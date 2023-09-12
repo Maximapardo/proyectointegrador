@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box    
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(241, 243, 255);
+    font-family:'Bebas Neue', sans-serif;
+    margin: 10px;
+    font: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0px;
+    margin-right: 10px;
+    
+}
+a{
+    text-decoration:none;
+    color: rgb(18, 1, 1);
+}
+li {
+    list-style-type: none
+}
+.logo {
+    width: 160px;
+    height: 160px;
+}
+h2 {
+    font-family: 'Bebas Neue', 'sans-serif';
+    color: black;
+    padding-left: 1%;
+    border: solid;
+    background-color:rgb(9, 99, 254);
+    text-align: center;
+    font: 14px;
+}
+
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 30px;
+}
+
+h3 {
+    font-family: 'Bebas Neue', 'sans-serif';
+    text-align: center;
+    color: rgb(rgb(76, 110, 246), green, blue);
+    padding-left: 1%;
+    border: solid;
+    background-color: rgb(9, 99, 254);
+    font: 13px;
+}
+h1 {
+    font-family: 'Bebas Neue', 'sans-serif';
+    text-align: center;
+    color: rgb(0, 1, 7);
+    padding-left: 1%;
+    border: solid;
+    background-color: rgb(9, 99, 254);
+    font: 15px;
+}
+article {
+    height: 280px;
+    width: 220px;
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+img {
+    width: 200px;
+    height: 230px;
+}
