@@ -1,184 +1,63 @@
-* {
-    box-sizing: border-box    
-}
-body {
-    margin: 0%;
-    padding: 0%;
-    background-color: rgb(241, 243, 255);
-    font-family:'Bebas Neue', sans-serif;
-    margin: 10px;
-    font: 14px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
 
-}
-header{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px;
-   flex-wrap: wrap;
-   flex-direction: row;
-}
-
-ul, ol {
-    list-style: none;
-    padding: 0px;
-    margin-right: 10px;
-    font-family: 'Bebas Neue', 'sans-serif';
-    text-align: left;
-    font: 15px;
-    color: #007bff; 
-
-}
-a{
-    text-decoration:none;
-    color: rgb(18, 1, 1);
-}
-li {
-    list-style-type: none
-}
-.logo {
-    width: 160px;
-    height: 160px;
-}
-h2 {
-    font-family: 'Bebas Neue', 'sans-serif';
-    color: black;
-    padding-left: 1%;
-    border: solid;
-    background-color:rgb(9, 99, 254);
-    text-align: center;
-    font: 14px;
-}
-
-.container{
-    position: relative;
+.header {
+    background-color: #170649; 
+    color: white; 
+    padding: 20px; 
+    text-align: left; 
+  }
+  .lista {
+    list-style: none; 
+    padding: 0; 
+  }
+  .lista li {
+    display: inline; 
+    margin-right: 20px; 
+  }
+  .lista a {
+    text-decoration: none; 
+    color: white; 
+  }
+  .Formulario {
+    margin-top: 20px; 
+  }
+  .Formulario input[type="email"],
+  .Formulario input[type="genero"] {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-h3 {
-    font-family: 'Bebas Neue', 'sans-serif';
-    text-align: center;
-    color: rgb(rgb(76, 110, 246), green, blue);
-    padding-left: 1%;
-    border: solid;
-    background-color: rgb(9, 99, 254);
-    font: 13px;
-}
-h1 {
-    font-family: 'Bebas Neue', 'sans-serif';
-    text-align: center;
-    color: rgb(0, 1, 7);
-    padding-left: 1%;
-    border: solid;
-    background-color: rgb(9, 99, 254);
-    font: 15px;
-}
-article {
-    height: 280px;
-    width: 220px;
-}
-
-
-main {
-    flex-grow: 1;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-img {
-    width: 200px;
-    height: 230px;
-}
-p {
-    font-family: 'Bebas Neue', 'sans-serif';
-    color: black;
-    padding-left: 0%;
-    position: absolute;
-    text-align: left;
-    font: 14px;
-    top: 95%;
-    margin-bottom: 20px;
-}
-button{
-    position: absolute;
-    top: 80%;
-    left: 1%;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    margin-bottom: 10px; 
+  }
+  .Formulario button {
+    background-color: #170649; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
     cursor: pointer;
-}
-.contenedor-p {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.texto {
+    border: 2px solid #2d95b2; 
+    padding: 10px;
+  }
+  article {
+    margin-bottom: 20px; 
+  }
+  article h3 {
+    font-size: 18px; 
+  }
+  article p {
+    font-size: 14px; 
+  }
+  .footer {
+    background-color: #170649; 
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+  }
+  h1 {
+    border: 2px solid #2d95b2; 
     font-family: 'Bebas Neue', 'sans-serif';
-    color: black;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #2d95b2;
     text-align: left;
     font-size: 14px;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.texto:nth-child(1) {
-    top: 10%;
-}
-.texto:nth-child(2) {
-    top: 15%;
-}
-.texto:nth-child(3) {
-    top: 20%;
-}
-.texto:nth-child(4) {
-    top: 25%;
-    width: 100vw;
-    left: 0;
-}
-.texto:nth-child(5) {
-    top: 31%;
-}
-
-@media (max-width: 768px) {
-    .logo {
-        width: 100px; 
-    }
-    h2, h3, h1 {
-        font-size: 11px;
-    }
-}
-.contenedor-genres {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.formulario {
-
-}
+    display: inline-block;
+  }
+ 
