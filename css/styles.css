@@ -1,129 +1,159 @@
+* {box-sizing: border-box
+    
+}
 
-.header {
-    background-color: #170649; 
-    color: white; 
-    padding: 20px; 
-    text-align: left; 
-    align-items: flex-end;
-  }
-
-  .lista {
-    list-style: none; 
-    padding: 0; 
-  }
-  .lista li {
-    display: inline; 
-    margin-right: 20px; 
-  }
-  .lista a {
-    text-decoration: none; 
-    color: white; 
-  }
-  .Formulario {
-    margin-top: 20px;
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
-     justify-content: flex-start;
-  }
-  .Formulario input[type="email"],
-  .Formulario input[type="genero"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px; 
-  }
-  .Formulario button {
-    background-color: #170649; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    cursor: pointer;
-    border: 2px solid #2d95b2; 
-    padding: 10px;
-  }
-  article {
-    margin-bottom: 20px; 
-  }
-  article h3 {
-    font-size: 18px; 
-  }
-  article p {
-    font-size: 14px; 
-  }
-  .footer {
-    background-color: #170649; 
-    color: white; 
-    padding: 10px; 
-    text-align: center; 
-  }
-  h1 {
-    border: 2px solid #2d95b2; 
-    font-family: 'Bebas Neue', 'sans-serif';
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: #2d95b2;
-    text-align: left;
-    font-size: 40px;
-    display: inline-block;
-    margin-top: 90px;
-    font-weight: bolder;
-  }
-  h2
-  {
-    text-align: center;
-    font-size: 30px;
-    font-weight: lighter;
-    box-sizing: border-box;
-    border-width: 3px;
-    border-color: gray;
-    border-style: solid;
-  }
-  .Peliculas-Populares
-  {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px;
-
-  }
-  .Peliculas-mas-valoradas
-  {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px;
-  }
-  .Series-populares
-  {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px;
-  }
-  .Series-populares article img
-  
-  .contenedor-genres
-  {
-    display: flex;
-    flex-wrap: wrap;
-  }
-main
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #170649;
+    font-family:'Bebas Neue', sans-serif;
+    margin: 10px;
+}
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+ul, ol {
+    list-style: none;
+    padding: 0px;
+    margin-right: 10px;
+    color: antiquewhite;
+}
+a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+main 
 {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+.Peliculas-Populares
+{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px;
+}
+.Peliculas-Populares article img{
+  align-items: center;
+  align-self: center;
+  width: 150px;
+  height: 300px;
+  padding: 10px;
+}
+.Peliculas-mas-valoradas
+{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px;
+}
+.Peliculas-mas-valoradas article img
+{
+  align-items: center;
+  align-self: center;
+  width: 150px;
+  height: 300px;
+  padding: 10px;
+}
+.Series-populares
+{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px;
+}
+.Series-populares article img
+{
+  align-items: center;
+  align-self: center;
+  width: 150px;
+  height: 300px;
+  padding: 10px;
+}
+h1
+{
+  border: 2px solid #2d95b2; 
+  font-family: 'Bebas Neue', 'sans-serif';
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #2d95b2;
+  text-align: center;
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 90px;
+  font-weight: bolder;
+}
+h2
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-color: blue;
+  border-style: solid;
+  color: lightskyblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3
+{
+  text-align: center;
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 p
 {
   text-align: center;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
 }
- 
+.Genero-peliculas
+{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px;
+}
+.genero-infantil
+{
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+.genero-infantil img
+{
+  align-items: center;
+  align-self: center;
+  width: 150px;
+  height: 300px;
+  padding: 10px;
+}
+.peliculas-favoritas
+{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px;
+}
