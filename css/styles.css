@@ -4,6 +4,7 @@
     color: white; 
     padding: 20px; 
     text-align: left; 
+    align-items: flex-end;
   }
   .lista {
     list-style: none; 
@@ -18,7 +19,11 @@
     color: white; 
   }
   .Formulario {
-    margin-top: 20px; 
+    margin-top: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: flex-start;
   }
   .Formulario input[type="email"],
   .Formulario input[type="genero"] {
@@ -60,4 +65,25 @@
     font-size: 14px;
     display: inline-block;
   }
+  .Peliculas-Populares
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Peliculas-mas-valoradas
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Series-populares
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-genres
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
  
