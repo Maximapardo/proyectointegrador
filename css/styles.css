@@ -14,7 +14,37 @@ header{
    justify-content: space-between;
    align-items: center;
    padding: 10px;
+   background-color: #0c012c;
 }
+.logo
+{
+  align-self: center;
+  align-items: center;
+
+}
+.Formulario {
+  margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+.Formulario input[type="email"],
+.Formulario input[type="genero"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; 
+}
+.Formulario button {
+  background-color: #170649; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  border: 2px solid #2d95b2; 
+  padding: 10px;
+}
+
 ul, ol {
     list-style: none;
     padding: 0px;
@@ -24,6 +54,10 @@ ul, ol {
 a{
     text-decoration:none;
     color: rgb(255, 255, 255);
+}
+footer
+{
+  background-color: black;
 }
 main 
 {
@@ -86,11 +120,11 @@ main
 }
 h1
 {
-  border: 2px solid #2d95b2; 
+  border: 2px solid #0dbdee; 
   font-family: 'Bebas Neue', 'sans-serif';
   padding-left: 1%;
   padding-right: 1%;
-  background-color: #2d95b2;
+  background-color: #52b3eb;
   text-align: center;
   font-size: 40px;
   display: inline-block;
@@ -104,7 +138,7 @@ h2
   font-weight: lighter;
   box-sizing: border-box;
   border-width: 3px;
-  border-color: blue;
+  border-color: rgb(0, 85, 255);
   border-style: solid;
   color: lightskyblue;
   font-family: Georgia, 'Times New Roman', Times, serif;
