@@ -20,29 +20,52 @@ header{
 {
   align-self: center;
   align-items: center;
-
+  width: 160px;
+    height: 160px;
 }
 .Formulario {
-  margin-top: 20px;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: flex-start;
+  background-color: #2e2c2c06;
+  margin: 40px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
+.Formulario div {
+  margin-bottom: 15px;
+}
+
 .Formulario input[type="email"],
 .Formulario input[type="genero"] {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px; 
+  border: 1px solid #eceaef;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
 }
+
+.Formulario input[type="email"]:focus,
+.Formulario input[type="genero"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
 .Formulario button {
-  background-color: #170649; 
-  color: white; 
-  border: none; 
-  padding: 10px 20px; 
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  border: 2px solid #2d95b2; 
-  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.Formulario button:hover {
+  background-color: #0056b3;
 }
 
 ul, ol {
@@ -53,7 +76,7 @@ ul, ol {
 }
 a{
     text-decoration:none;
-    color: rgb(255, 255, 255);
+    color: rgb(168, 28, 196);
 }
 footer
 {
@@ -127,7 +150,6 @@ h1
   background-color: #52b3eb;
   text-align: center;
   font-size: 40px;
-  display: inline-block;
   margin-top: 90px;
   font-weight: bolder;
 }
@@ -191,3 +213,98 @@ p
   justify-content: space-between;
   padding: 80px;
 }
+.peliculas-favoritas .Toy-Story
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.peliculas-favoritas .Gran-Turismo
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.peliculas-favoritas .Oppenheimer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.peliculas-favoritas .Barbie
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.peliculas-favoritas .Los-Simpson
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.Cars {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+.resultados-busqueda .Gran-Turismo 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.resultados-busqueda .Toy-Story
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.resultados-busqueda .Casa-papel 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+.detalle-series
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+.imggenres {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.imggenres li {
+  background-color: #451cb7;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 0 calc(33% - 20px); 
+  display: flex;
+  align-items: center;
+}
+
+.imggenres img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.imggenres li > :first-child {
+  flex: 1;
+  font-weight: bold;
