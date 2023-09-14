@@ -62,8 +62,10 @@
     padding-right: 1%;
     background-color: #2d95b2;
     text-align: left;
-    font-size: 14px;
+    font-size: 40px;
     display: inline-block;
+    margin-top: 90px;
+    font-weight: bolder;
   }
   h2
   {
@@ -79,21 +81,46 @@
   {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+
   }
   .Peliculas-mas-valoradas
   {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
   }
   .Series-populares
   {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
   }
   .contenedor-genres
   {
     display: flex;
     flex-wrap: wrap;
   }
-
+main
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+p
+{
+  text-align: center;
+}
  
