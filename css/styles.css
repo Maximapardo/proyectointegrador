@@ -6,6 +6,7 @@
     text-align: left; 
     align-items: flex-end;
   }
+
   .lista {
     list-style: none; 
     padding: 0; 
@@ -108,6 +109,8 @@
     justify-content: space-between;
     padding: 80px;
   }
+  .Series-populares article img
+  
   .contenedor-genres
   {
     display: flex;
