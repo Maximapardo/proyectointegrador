@@ -143,7 +143,7 @@ main
 }
 h1
 {
-  border: 2px solid #0dbdee; 
+  border: 2px light #0dbdee; 
   font-family: 'Bebas Neue', 'sans-serif';
   padding-left: 1%;
   padding-right: 1%;
@@ -152,6 +152,7 @@ h1
   font-size: 40px;
   margin-top: 90px;
   font-weight: bolder;
+
 }
 h2
 {
@@ -159,9 +160,6 @@ h2
   font-size: 30px;
   font-weight: lighter;
   box-sizing: border-box;
-  border-width: 3px;
-  border-color: rgb(0, 85, 255);
-  border-style: solid;
   color: lightskyblue;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
