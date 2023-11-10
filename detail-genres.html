@@ -7,46 +7,64 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <body class="header">
-            <img src="../proyectointegrador/imagenes/logo.png" width="260px" height="300" class="logo">
-            <ul class="lista">
-                <head> <li><a href="./index.html" class="letracomun">HOME</a></li></head>
-                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
+    <header class="header">
+        <h1>PMT STREAMING</h1>
+        <div>
+            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+        </div>
+        <nav class="nav">
+            <ul class="inicio">
+                <li><a class="home" href="./home.html">HOME</a></li>
+                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
+                <li><a class="home" href="./genres.html">GENEROS</a></li>
             </ul>
-        </body>
-       
-    <form action="search-results.html" method ="GET">
-        <section class="Formulario">
-        <div>
-            <input type="email" name="email" value="" placeholder="Indica tu dirección de correo">
-        </div>
-        <div>
-            <input type="genero" name="genero" value="" placeholder="Indica tu género favorito">
-        </div>
-        <button type="submit">Enviar</button>
-    </section>
-    </form>
+        </nav>
+        <section class="form">
+            <form id="buscador" action="search-results.html" method="GET">
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
+                <button id="enviar" class="boton" type="submit"></button>
+            </form>
+        </section>
     </header>
-    <h1>PMT Streaming</h1>
-
-    <h2>Géneros de peliculas y series</h2>
-
-    <section class="Generos">
-        <article class="genero-infantil">
-        <div class="contenedor-genres">
-            <p class="texto.genres">Una película infantil es una película destinada a un público de corta edad, adaptada a sus intereses y a su nivel de comprensión. Los protagonistas de este tipo de películas son la mayoría de las veces niños o animales, rara vez adultos. Algunos autores las consideran una extensión de la literatura infantil.</p>
-
-        <h3>Peliculas Infantiles</h3>
-
-        <ul class="imggenres">
-            <li>Cars: <img src="./imagenes/cars.png" width="100" height="200"></li>
-            <li>Toy story: <img src="./imagenes/toy story.png" width="100" height="200"></li>
-            <li>Shrek: <img src="./imagenes/shrek.png" width="100" height="200"></li>
-        </ul>
-    </article>
-</section>
+    <h2>DRAMA</h2>
+    <main>
+        <section class="contenedor">
+            <div class="item1">
+                <ul>
+                    <li>
+                        <img class="imagenes" src="./imgs/casa de papel.png" alt="">
+                        <h3>LA CASA DE PAPEL</h3>
+                        <h4>2 de mayo del 2017</h4>
+                    </li>
+                    <li>
+                        <img class="imagenes" src="./imgs/gossip girl.png" alt="">
+                        <h3>GOSSIP GIRL</h3>
+                        <h4>19 de septiembre del 2007</h4>
+                    </li>
+                    <li>
+                        <img class="imagenes" src="./imgs/joker.png" alt="">
+                        <h3>THE JOKER</h3>
+                        <h4>4 de octubre del 2019</h4>
+                    </li>
+                    <li>
+                        <img class="imagenes" src="./imgs/oppenheimer.png" alt="">
+                        <h3>OPPENHEIMER</h3>
+                        <h4>23 de julio del 2023</h4>
+                    </li>
+                    <li>
+                        <img class="imagenes" src="./imgs/suits.png" alt="">
+                        <h3>SUITS</h3>
+                        <h4>23 de junio del 2011</h4>
+                    </li>
+                    <li>
+                        <img class="imagenes" src="./imgs/the notebook.png" alt="">
+                        <h3>THE NOTEBOOK</h3>
+                        <h4>28 de octubre del 2004</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
     </footer>
