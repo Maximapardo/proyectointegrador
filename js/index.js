@@ -91,3 +91,10 @@ function search(){
       .catch(function (error){
         console.log(error);
       })
+
+      for (let i = 0; i < info.length; i++) {
+        nuevasContainer.innerHTML += `<div class="pelicula">
+    <a href="./detail-movie.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
+    <h4 class="titulos-peliculas">${info[i].title}</h4>
+    <p class="fechas">${info[i].release_date}</p>
+    </div>`}
