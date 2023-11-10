@@ -11,7 +11,7 @@
     <header class="header">
         <h1>PMT STREAMING</h1>
         <div>
-            <a href="./index.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+            <a href="index.html"><img src="./imagenes/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
         </div>
         <nav class="nav">
             <ul class="inicio">
@@ -23,15 +23,15 @@
         <section class="form">
             <form id="buscador" action="search-results.html" method="GET">
                 <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
-                <button id="enviar" onclick="search()" class="boton" ></button>
+                <button id="enviar" type="submit" class="boton" ></button>
             </form>
         </section>
     </header>
     <h2>PELICULAS POPULARES</h2>
     <main>
         <section class="contendedor">
-            <div class="item1">
-                <ul>
+            <div id="peliculasPopulares" class="item1">
+                <!-- <ul>
                     <li>
                         <a class="imagenes" href="./detail-movie.html">
                             <img src="./imgs/barbie.png" alt="">
@@ -67,15 +67,15 @@
                         <h3>OPPENHEIMER</h3>
                         <h4>23 de julio del 2023</h4>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
     </main>
     <h2>PELICULAS MAS VALORADAS</h2>
     <main>
         <section class="contenedor">
-            <div class="item1">
-                <ul>
+            <div id="peliculasvaloradas" class="item1">
+                <!-- <ul>
                     <li>
                         <a class="imagenes" href="./detail-movie.html">
                             <img src="./imgs/rapido y furiosos.png" alt="">
@@ -111,7 +111,7 @@
                         <h3>TOY STORY</h3>
                         <h4>14 de marzo de 1996</h4>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
     </main>
@@ -119,8 +119,8 @@
     <main>
        <section class="contenedor">
         <div class="item1">
-            <ul>
-                <li>
+            <!-- <ul> -->
+                <!-- <li>
                     <a class="imagenes" href="./detail-series.html">
                         <img src="./imgs/casa de papel.png" alt="">
                     </a>
@@ -155,73 +155,13 @@
                     <h3>SUITS</h3>
                     <h4>23 de junio del 2011</h4>
                 </li>
-            </ul>
+            </ul> -->
         </div>
        </section>
     </main>
     <footer class="footer">
         <p> Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
     </footer>
-    <script src="./js/home.js"></script>
-</body>
-</html>
-[9:07, 10/11/2023] pachi: home
-[9:07, 10/11/2023] pachi: <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEARCH RESULTS</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
-    <header class="header">
-        <h1>PMT STREAMING</h1>
-        <div>
-            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
-        </div>
-        <nav class="nav">
-            <ul class="inicio">
-                <li><a class="home" href="./home.html">HOME</a></li>
-                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
-                <li><a class="home" href="./genres.html">GENEROS</a></li>
-            </ul>
-        </nav>
-        <section class="form">
-            <form id="buscador" action="search-results.html" method="GET">
-                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
-                <button id="enviar" class="boton" type="submit"></button>
-            </form>
-        </section>
-    </header> 
-    <h5>Estos son los resultados de tu búsqueda</h5>
-    <main>
-        <section class="pelis">
-            <div class="cajapelis">
-                <img class="imagenpeli" id="image_movie" alt="">
-                <div class="info-peli">
-                    <ul>
-                        <h3 id="titlemovie"></h3>
-                        <h4 id="titledate">Fecha de estreno: 29 de junio del 2006</h4>
-                        <h4 id="sinopsis">Sinópsis:De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo largo de la histórica Ruta 66.</h4>
-                        <h4 id="generos"> <a class="generos" href="./detail-genres.html"> Genero: Infantil</a></h4>
-                        <h4 id="calificacion">Calificación: 9</h4>
-                    </ul>
-                    <section>
-                        <form action="./favorite.html" method="GET">
-                            <button class="boton-favoritos" type="submit">me gusta</button>
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
-        <div>
-            <img src="./imagenes/fotito.webarchive" alt="">
-        </div>
-    </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>
