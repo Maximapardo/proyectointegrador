@@ -7,43 +7,49 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <body class="header">
-            <img src="../proyectointegrador/imagenes/logo.png" width="260px" height="300" class="logo">
-            <ul class="lista">
-                <head> <li><a href="./index.html" class="letracomun">HOME</a></li></head>
-                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
+    <header class="header">
+        <h1>PMT STREAMING</h1>
+        <div>
+            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+        </div>
+        <nav class="nav">
+            <ul class="inicio">
+                <li><a class="home" href="./home.html">HOME</a></li>
+                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
+                <li><a class="home" href="./genres.html">GENEROS</a></li>
             </ul>
-        </body>
-       
-    <form action="search-results.html" method ="GET">
-        <section class="Formulario">
-        <div>
-            <input type="email" name="email" value="" placeholder="Indica tu dirección de correo">
-        </div>
-        <div>
-            <input type="genero" name="genero" value="" placeholder="Indica tu género favorito">
-        </div>
-        <button type="submit">Enviar</button>
-    </section>
-    </form>
+        </nav>
+        <section class="form">
+            <form id="buscador" action="search-results.html" method="GET">
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
+                <button id="enviar" class="boton" type="submit"></button>
+            </form>
+        </section>
     </header>
-    <h1>PMT Streaming</h1>
-    <h2>Detalle de series</h2>
-    <section class="detalle-series">
-
-    <h3>Gossip girl</h3>
-    <img src="./imagenes/gossip girl.png" width="150" height="300">
-    <p>Calificación: 3.4/5</p>
-    <p>Fecha de estreno: 19 de septimebre del 2007</p>
-    <p>Cantidad de temporadas: 6</p>
-    <p>Sinópsis: El bachillerato ha culminado para los ex alumnos privilegiados de la exclusiva secundaria en la parte alta Este de Manhattan, pero Gossip Girl sigue compartiendo exclusivas en mensajes de texto de los escándalos y las vicisitudes. Mientras los graduados se embarcan hacia el futuro y los nuevos estudiantes llegan a Constance Billard, Gossip Girl continúa creando polémica e informando los posibles escándalos y la identidad de Gossip Girl sigue siendo un misterio.</p>
-    <p>Género: <a href="detail-genres.html">Drama</a></p>
-</section>
-
+    <main>
+        <section class="series">
+            <div class="cajaseries">
+                <img class="imagenserie" src="./imgs/casa de papel.png" alt="">
+                <div class="info-serie">
+                    <ul>
+                        <h3>La casa de papel</h3>
+                        <h4>Fecha de estreno: 2 de mayo del 2016</h4>
+                        <h4>Sinópsis:Ocho ladrones toman rehenes en la Fábrica Nacional de Moneda y Timbre de España, mientras el líder de la banda manipula a la policía para cumplir con su plan.</h4>
+                        <h4> <a class="generos" href="./detail-genres.html"> Genero: Drama</a></h4>
+                        <h4>Calificación: 8</h4>
+                    </ul>
+                    <section>
+                        <form action="./favorite.html" method="GET">
+                            <button class="boton-favoritos" type="submit">me gusta</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
     </footer>
+    
 </body>
 </html>
