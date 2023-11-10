@@ -27,11 +27,14 @@ function search(){
     .catch(err => console.error('error:' + err));
 
 //index//
+//defino las varaibles a usar//
 let baseURL = "https://api.themoviedb.org/3/"
 let API_KEY = "?api_key=3c3df15ca351ec3735ad14140026cfb8"
 let populares = "movie/popular"
-let valoradas = "movie/valorado"
+let valoradas = "movie/top_rated"
+let populares1 = "tv/popular"
 
+//peliculas populares//
 fetch(baseURL + populares + API_KEY)
 .then(function(res){
 return res.json()
@@ -42,7 +45,7 @@ return res.json()
     let peliculasPopularesContainer = document.querySelector("#peliculasPopulares")
     for (let i = 0; i < info.length; i++) {
         peliculasPopularesContainer.innerHTML += `<div class="pelis">
-                    <a href="./detail-movies.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="series"></a>
+                    <a href="./detail-movies.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
                     <h3 class="titulos-pelis">${info[i].title}</h3>
                     <h4 class="fechas">${info[i].release_date}</h4>
                   </div>`
@@ -52,25 +55,51 @@ return res.json()
     console.log(err)
 })
 
+//peliculas valoradas//
 fetch(baseURL + valoradas + API_KEY)
-.then(function(res){
-return res.json()
-})
-.then(function(data){
-    let info = data.results
-    console.log(data.results)
-    let peliculasvaloradasContainer = document.querySelector("#peliculasvaloradas")
+    .then(function(res) {
+        return res.json();
+    })
+    .then(function(data) {
+        let info = data.results;
+        console.log(data.results);
+        let peliculasValoradasContainer = document.querySelector("#peliculasValoradas");
+
+        for (let i = 0; i < info.length; i++) {
+            peliculasValoradasContainer.innerHTML += `<div class="pelis">
+                <a href="./detail-movies.html?id=${info[i].id}">
+                    <img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis">
+                </a>
+                <h3 class="titulos-pelis">${info[i].title}</h3>
+                <h4 class="fechas">${info[i].release_date}</h4>
+            </div>`;
+        }
+    })
+    .catch(function(err) {
+        console.log(err);
+  });
+  
+  //series populares//
+  fetch(baseURL + populares1 + API_KEY)
+  .then(function(res){
+    return res.json();
+  })
+  .then(function(data){
+    let info = data.results;
+    console.log(data.results);
+    let seriesPopularesContainer = document.querySelector("#seriesPopulares");  // Cambiado para usar un contenedor de series populares
     for (let i = 0; i < info.length; i++) {
-        peliculasvaloradasContainer.innerHTML += `<div class="pelis">
-                    <a href="./detail-movie.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="series"></a>
-                    <h3 class="titulos-pelis">${info[i].title}</h3>
-                    <h4 class="fechas">${info[i].release_date}</h4>
-                  </div>`
-                  }
-})
-.catch(function(err){
-    console.log(err)
-})
+      seriesPopularesContainer.innerHTML += `<div class="series">
+              <a href="./detail-series.html?id=${info[i].id}">
+              <img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="series"></a>
+              <h3 class="titulos-series">${info[i].name}</h3>
+              <h4 class="fechas">${info[i].first_air_date}</h4>
+      </div>`;
+    }
+  })
+  .catch(function(err){
+    console.log(err);
+  });
   
 //   fetch(url, options)
 //     .then(res => res.json())
