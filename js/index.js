@@ -19,14 +19,15 @@ function search(){
       document.getElementById("titlemovie").innerHTML=json.results[0].title;
       document.getElementById("titledate").innerHTML=json.results[0].release_date;
       document.getElementById("sinopsis").innerHTML=json.results[0].overview;
-      document.getElementById("generos").innerHTML=''; //json.results[0].title;
+      document.getElementById("generos").innerHTML=''; 
       document.getElementById("calificacion").innerHTML=json.results[0].vote_average;
       document.getElementById("image_movie").src='https://image.tmdb.org/t/p/w500/'+json.results[0].backdrop_path;
     })
     .catch(err => console.error('error:' + err));
 
     window.addEventListener('load', function (){
-      const url = 'https://api.themoviedb.org/3/tv/popular?api_key=3c3df15ca351ec3735ad14140026cfb8&languange=en-US'
+      
+    const url = 'https://api.themoviedb.org/3/tv/popular?api_key=3c3df15ca351ec3735ad14140026cfb8&languange=en-US'
 
       fetch(url)
         .then (function (response){
@@ -95,6 +96,7 @@ function search(){
       for (let i = 0; i < info.length; i++) {
         nuevasContainer.innerHTML += `<div class="pelicula">
     <a href="./detail-movie.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
-    <h4 class="titulos-peliculas">${info[i].title}</h4>
-    <p class="fechas">${info[i].release_date}</p>
-    </div>`}
+    <h3 class="titulos-peliculas">${info[i].title}</h3>
+    <h4 class="fechas">${info[i].release_date}</h4>
+    </div>`
+    }
