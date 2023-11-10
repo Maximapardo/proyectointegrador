@@ -7,41 +7,35 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <body class="header">
-            <img src="../proyectointegrador/imagenes/logo.png" width="260px" height="300" class="logo">
-            <ul class="lista">
-                <head> <li><a href="./index.html" class="letracomun">HOME</a></li></head>
-                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
+    <header class="header">
+        <h1>PMT STREAMING</h1>
+        <div>
+            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+        </div>
+        <nav class="nav">
+            <ul class="inicio">
+                <li><a class="home" href="./home.html">HOME</a></li>
+                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
+                <li><a class="home" href="./genres.html">GENEROS</a></li>
             </ul>
-        </body>
-  
-    <form action="search-results.html" method ="GET">
-        <section class="Formulario">
-        <div>
-            <input type="email" name="email" value="" placeholder="Indica tu dirección de correo">
-        </div>
-        <div>
-            <input type="genero" name="genero" value="" placeholder="Indica tu género favorito">
-        </div>
-        <button type="submit">Enviar</button>
-    </section>
-    </form>
+        </nav>
+        <section class="form">
+            <form id="buscador" action="search-results.html" method="GET">
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
+                <button id="enviar" class="boton" type="submit"></button>
+            </form>
+        </section>
     </header>
-    <h1>PMT Streaming</h1>
-    <section class="Genero-peliculas">
-        <h2>Género peliculas</h2>
-        <ul>
-            <li><a href="detail-genres.html">Drama</a></li>
-            <li><a href="detail-genres.html">Accion</a></li>
-            <li><a href="detail-genres.html">Infantil</a></li>
-            <li><a href="detail-genres.html">Comedia</a></li>
-        </ul>
-
-    </section>
+    <h2>GENEROS</h2>
+    <ul class="generos">
+        <h3><a href="detail-genres.html">DRAMA</a></h3>
+        <h3><a href="detail-genres.html">INFANTIL</a></h3>
+        <h3><a href="detail-genres.html">COMEDIA</a></h3>
+        <h3><a href="detail-genres.html">ACCIÓN</a></h3>
+    </ul>
     <footer class="footer">
         <p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
     </footer>
+    <script src="./js/genres.js"></script>
 </body>
 </html>
