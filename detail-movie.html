@@ -7,48 +7,48 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <body class="header">
-            <img src="../proyectointegrador/imagenes/logo.png" width="260px" height="300" class="logo">
-            <ul class="lista">
-                <head> <li><a href="./index.html" class="letracomun">HOME</a></li></head>
-                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
+    <header class="header">
+        <h1>PMT STREAMING</h1>
+        <div>
+            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+        </div>
+        <nav class="nav">
+            <ul class="inicio">
+                <li><a class="home" href="./home.html">HOME</a></li>
+                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
+                <li><a class="home" href="./genres.html">GENEROS</a></li>
             </ul>
-        </body>
-        
-    <form action="search-results.html" method ="GET">
-        <section class="Formulario">
-        <div>
-            <input type="email" name="email" value="" placeholder="Indica tu dirección de correo">
-        </div>
-        <div>
-            <input type="genero" name="genero" value="" placeholder="Indica tu género favorito">
-        </div>
-        <button type="submit">Enviar</button>
-    </section>
-    </form>
+        </nav>
+        <section class="form">
+            <form id="buscador" action="search-results.html" method="GET">
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
+                <button id="enviar" class="boton" type="submit"></button>
+            </form>
+        </section>
     </header>
-    <h1>PMT Streaming</h1>
-    <body>
-        <section class="detalles-peliculas"></section>
-        <h2>Detalles de la pelicula</h2>
-        <article class="Cars">
-        <h3>Cars</h3>
-        <img src="./imagenes/cars.png" width="150" height="300"> 
-        <div class="contenedor-p">
-        <p class="texto">Calificación: 4.7/5</p>
-        <p class="texto">Fecha de estreno: 29 de julio del 2006 </p>
-        <p class="texto">Duración: 1 hora 57 minutos</p>
-        <p class="texto">Sinópsis: De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo largo de la histórica Ruta 66.</p>
-        <p class="texto">Género: <a href="detail-genres.html">Infantiles</a></p>
-        </div>
-        <button>Agregar a favoritos</button>
-    </article>
-    </section>
-    </body>
-<footer class="footer">
-    <p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
-</footer>
+    <main>
+        <section class="pelis">
+            <div class="cajapelis">
+                <img class="imagenpeli" src="./imgs/cars.png" alt="">
+                <div class="info-peli">
+                    <ul>
+                        <h3>Cars</h3>
+                        <h4>Fecha de estreno: 29 de junio del 2006</h4>
+                        <h4>Sinópsis:De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo largo de la histórica Ruta 66.</h4>
+                        <h4> <a class="generos" href="./detail-genres.html"> Genero: Infantil</a></h4>
+                        <h4>Calificación: 9</h4>
+                    </ul>
+                    <section>
+                        <form action="./favorite.html" method="GET">
+                            <button class="boton-favoritos" type="submit">me gusta</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
+    </footer>
 </body>
 </html>
