@@ -8,149 +8,218 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <body class="header">
-            <img src="../proyectointegrador/imagenes/logo.png" width="260px" height="300" class="logo">
-            <ul class="lista">
-                <head> <li><a href="./index.html" class="letracomun">HOME</a></li></head>
-                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
+    <header class="header">
+        <h1>PMT STREAMING</h1>
+        <div>
+            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+        </div>
+        <nav class="nav">
+            <ul class="inicio">
+                <li><a class="home" href="./home.html">HOME</a></li>
+                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
+                <li><a class="home" href="./genres.html">GENEROS</a></li>
             </ul>
-        </body>
-        
-    <form action="search-results.html" method ="GET">
-        <section class="Formulario">
-        <div>
-            <input type="email" name="email" value="" placeholder="Indica tu dirección de correo">
-        </div>
-        <div>
-            <input type="genero" name="genero" value="" placeholder="Indica tu género favorito">
-        </div>
-        <button type="submit">Enviar</button>
-    </section>
-    </form>
+        </nav>
+        <section class="form">
+            <form id="buscador" action="search-results.html" method="GET">
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
+                <button id="enviar" onclick="search()" class="boton" ></button>
+            </form>
+        </section>
     </header>
-    <h1>PMT Streaming</h1>
+    <h2>PELICULAS POPULARES</h2>
     <main>
-        <h2>Peliculares Populares</h2> 
-        <section class="Peliculas-Populares">  
-            <a href="./detail-movie.html">
-            <article id="Cars">
-            <h3>Cars</h3>
-            <img src="../proyectointegrador/imagenes/cars.png" width="150" height="300">
-            <p>"29 de junio del 2006"</p> 
-        </article>
-    </a>
-    <a href="./detail-movie.html">
-        <article id="Gran-Turismo">
-            <h3>Gran Turismo</h3>
-            <img src="../proyectointegrador/imagenes/gran turismo.png" width="150" height="300">
-            <p>"24 de agosto del 2023"</p>
-        </article>
-        </a>
-        <a href="./detail-movie.html">
-        <article id="Toy-Story">
-            <h3>Toy Story</h3>
-            <img src="../proyectointegrador/imagenes/toy story.png" width="150" height="300">
-            <p>"14 de marzo de 1996"</p>
-        </article>
-        </a>
-        <a href="./detail-movie.html">
-        <article id="Oppenheimer">
-            <h3>Oppenheimer</h3>
-            <img src="../proyectointegrador/imagenes/oppenheimer.png" width="150" height="300">
-            <p>"20 de julio de 2023"</p>
-        </article>
-        </a>
-        <a href="./detail-movie.html">
-        <article id="Barbie"> 
-            <h3>Barbie</h3>
-            <img src="../proyectointegrador/imagenes/barbie.png" width="150" height="300">
-            <p>"20 de julio de 2023"</p>
-        </article>
-        </a>
-    </section>
+        <section class="contendedor">
+            <div class="item1">
+                <ul>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/barbie.png" alt="">
+                        </a>
+                        <h3>BARBIE</h3>
+                        <h4>23 de julio del 2023</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/cars.png" alt="">
+                        </a>
+                        <h3>CARS</h3>
+                        <h4>29 de julio del 2009</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/gran turismo.png" alt="">
+                        </a>
+                        <h3>GRAN TURISMO</h3>
+                        <h4>24 de agosto del 2023</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/joker.png" alt="">
+                        </a>
+                        <h3>JOKER</h3>
+                        <h4>4 de octubre del 2019</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/oppenheimer.png" alt="">
+                        </a>
+                        <h3>OPPENHEIMER</h3>
+                        <h4>23 de julio del 2023</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <h2>PELICULAS MAS VALORADAS</h2>
+    <main>
+        <section class="contenedor">
+            <div class="item1">
+                <ul>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/rapido y furiosos.png" alt="">
+                        </a>
+                        <h3>RAPIDO Y FURIOSO</h3>
+                        <h4>17 de noviembre del 2001</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/shrek.png" alt="">
+                        </a>
+                        <h3>SHREK</h3>
+                        <h4>19 de julio del 2001</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/son como niños.png" alt="">
+                        </a>
+                        <h3>SON COMO NIÑOS</h3>
+                        <h4>22 de julio del 2010</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/the notebook.png" alt="">
+                        </a>
+                        <h3>THE NOTEBOOK</h3>
+                        <h4>28 de octubre del 2004</h4>
+                    </li>
+                    <li>
+                        <a class="imagenes" href="./detail-movie.html">
+                            <img src="./imgs/toy story.png" alt="">
+                        </a>
+                        <h3>TOY STORY</h3>
+                        <h4>14 de marzo de 1996</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <h2>SERIES POPULARES</h2>
+    <main>
+       <section class="contenedor">
+        <div class="item1">
+            <ul>
+                <li>
+                    <a class="imagenes" href="./detail-series.html">
+                        <img src="./imgs/casa de papel.png" alt="">
+                    </a>
+                    <h3>LA CASA DE PAPEL</h3>
+                    <h4>2 de mayo del 2017</h4>
+                </li>
+                <li>
+                    <a class="imagenes" href="./detail-series.html">
+                        <img src="./imgs/elite.png" alt="">
+                    </a>
+                    <h3>ELITE</h3>
+                    <h4>5 de octubre del 2018</h4>
+                </li>
+                <li>
+                    <a class="imagenes" href="./detail-series.html">
+                        <img src="./imgs/gossip girl.png" alt="">
+                    </a>
+                    <h3>GOSSIP GIRL</h3>
+                    <h4>19 de septiembre del 2017</h4>
+                </li>
+                <li>
+                    <a class="imagenes" href="./detail-series.html">
+                        <img src="./imgs/simpson.png" alt="">
+                    </a>
+                    <h3>LOS SIMPSON</h3>
+                    <h4>17 de diciembre de 1989</h4>
+                </li>
+                <li>
+                    <a class="imagenes" href="./detail-series.html">
+                        <img src="./imgs/suits.png" alt="">
+                    </a>
+                    <h3>SUITS</h3>
+                    <h4>23 de junio del 2011</h4>
+                </li>
+            </ul>
+        </div>
+       </section>
+    </main>
+    <footer class="footer">
+        <p> Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
+    </footer>
+    <script src="./js/home.js"></script>
+</body>
+</html>
+[9:07, 10/11/2023] pachi: home
+[9:07, 10/11/2023] pachi: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH RESULTS</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
 
-    <h2>Peliculas mas valoradas</h2> 
-    <section class="Peliculas-mas-valoradas" >  
-        <a href="./detail-movie.html">
-        <article id="The-Notebook"> 
-            <h3>The Notebook</h3>
-            <img src="../proyectointegrador/imagenes/the notebook.png" width="150" height="300">
-            <p>"28 de octubre de 2004"</p> 
-        </article>
-        </a>
-        <a href="./detail-movie.html"> 
-        <article id="The-Joker">
-            <h3>The Joker</h3>
-            <img src="../proyectointegrador/imagenes/joker.png" width="150" height="300">
-            <p>"4 de octubre de 2019"</p>
-        </article>
-        </a>
-        <a href="./detail-movie.html">
-        <article id="Son-Como-niños"> 
-            <h3>Son Como niños</h3>
-            <img src="../proyectointegrador/imagenes/son como niños.png" width="150" height="300">
-            <p>"22 de julio de 2010"</p>
-        </article>
-        </a>
-        <a href="./detail-movie.html">
-        <article id="Shrek"> 
-            <h3>Shrek</h3>
-            <img src="../proyectointegrador/imagenes/shrek.png" width="150" height="300">
-            <p>"19 de julio de 2001"</p>
-        </article>
-        </a>
-        <a href="./detail-movie.html">
-        <article id="Rapido-furioso"> 
-            <h3>Rapido y furioso</h3>
-            <img src="../proyectointegrador/imagenes/rapido y furiosos.png" width="150" height="300">
-            <p>"17 de noviembre de 2001"</p>
-        </article>
-        </a>
-    </section>
-
-    <h2>Series populares</h2> 
-    <section class="Series-populares" > 
-        <a href="./detail-serie.html"> 
-        <article class="Gossip-Girl"> 
-            <h3>Gossip Girl</h3>
-            <img src="../proyectointegrador/imagenes/gossip girl.png" width="150" height="300">
-            <p>"19 de septiembre de 2007"</p> 
-        </article>
-        </a>
-        <a href="./detail-serie.html"> 
-        <article class="Los-Simpsons">
-            <h3>Los Simpsons</h3>
-            <img src="../proyectointegrador/imagenes/simpson.png" width="150" height="300">
-            <p>"17 de diciembre de 1989"</p>
-        </article>
-        </a>
-        <a href="./detail-serie.html"> 
-        <article id="Suits">
-            <h3>Suits</h3>
-            <img src="../proyectointegrador/imagenes/suits.png" width="150" height="300">
-            <p>"23 de junio de 2011"</p>
-        </article>
-        </a>
-        <a href="./detail-serie.html"> 
-        <article class="Elite"> 
-            <h3>Elite</h3>
-            <img src="../proyectointegrador/imagenes/elite.png" width="150" height="300">
-            <p>"5 de octubre de 2018"</p>
-        </article>
-        </a>
-        <a href="./detail-serie.html"> 
-        <article class="Casa-papel"> 
-            <h3>La casa de papel</h3>
-            <img src="../proyectointegrador/imagenes/casa de papel.png" width="150" height="300">
-            <p>"2 de mayo de 2017"</p>
-        </article>
-        </a>
-    </section>
+    <header class="header">
+        <h1>PMT STREAMING</h1>
+        <div>
+            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+        </div>
+        <nav class="nav">
+            <ul class="inicio">
+                <li><a class="home" href="./home.html">HOME</a></li>
+                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
+                <li><a class="home" href="./genres.html">GENEROS</a></li>
+            </ul>
+        </nav>
+        <section class="form">
+            <form id="buscador" action="search-results.html" method="GET">
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
+                <button id="enviar" class="boton" type="submit"></button>
+            </form>
+        </section>
+    </header> 
+    <h5>Estos son los resultados de tu búsqueda</h5>
+    <main>
+        <section class="pelis">
+            <div class="cajapelis">
+                <img class="imagenpeli" id="image_movie" alt="">
+                <div class="info-peli">
+                    <ul>
+                        <h3 id="titlemovie"></h3>
+                        <h4 id="titledate">Fecha de estreno: 29 de junio del 2006</h4>
+                        <h4 id="sinopsis">Sinópsis:De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo largo de la histórica Ruta 66.</h4>
+                        <h4 id="generos"> <a class="generos" href="./detail-genres.html"> Genero: Infantil</a></h4>
+                        <h4 id="calificacion">Calificación: 9</h4>
+                    </ul>
+                    <section>
+                        <form action="./favorite.html" method="GET">
+                            <button class="boton-favoritos" type="submit">me gusta</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
     </footer>
+    <script src="./js/search.js"></script>
 </body>
 </html>
