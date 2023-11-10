@@ -7,95 +7,65 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <body class="header">
-            <img src="../proyectointegrador/imagenes/logo.png" width="260px" height="300" class="logo">
-            <ul class="lista">
-                <head> <li><a href="./index.html" class="letracomun">HOME</a></li></head>
-                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
+    <header class="header">
+        <h1>PMT STREAMING</h1>
+        <div>
+            <a href="./home.html"><img src="./imgs/logo.png" class="logo" alt="imagen del logo de la pagina"></a>
+        </div>
+        <nav class="nav">
+            <ul class="inicio">
+                <li><a class="home" href="./home.html">HOME</a></li>
+                <li><a class="home" href="./favorite.html">FAVORITOS</a></li>
+                <li><a class="home" href="./genres.html">GENEROS</a></li>
             </ul>
-        </body>
-        
-    <form action="search-results.html" method ="GET">
-        <section class="Formulario">
-        <div>
-            <input type="email" name="email" value="" placeholder="Indica tu dirección de correo">
-        </div>
-        <div>
-            <input type="genero" name="genero" value="" placeholder="Indica tu género favorito">
-        </div>
-        <button type="submit">Enviar</button>
-    </section>
-    </form>
+        </nav>
+        <section class="form">
+            <form id="buscador" action="search-results.html" method="GET">
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="resultadosbusqueda">
+                <button id="enviar" class="boton" type="submit"></button>
+            </form>
+        </section>
     </header>
-    <h1>PMT Streaming</h1>
-    <body>
-    <h2>Estas son sus peliculas y series favoritas</h2>
-    <section class="peliculas-favoritas">
-        <article class="Gran-Turismo">
-            <h3>Gran Turismo</h3>
-            <img src="./imagenes/gran turismo.png" width="150" height="300">
-            <p>Califcación: 3.9/5</p>
-            <p>Fecha de estreno:24 de agosto del 2023</p>
-            <p>Duración: 2 horas 15 minutos</p>
-            <p>Sinópsis: El joven Jann Mardenborough gana una serie de competiciones de videojuegos Gran Turismo organizadas por una importante empresa automovilística y obtiene la oportunidad de convertirse en piloto de carreras profesional.</p>
-            <p>Género: <a href="detail-genres.html">Acción</a></p>
-        </article>
-    
-        <article class="Toy-Story">
-            <h3>Toy story</h3>
-            <img src="./imagenes/toy story.png" width="150" height="300">
-            <p>Califcación: 4.1/5</p>
-            <p>Fecha de estreno: 22 de noviembre de 1995</p>
-            <p>Duración: 1 hora 17 minutos</p>
-            <p>Sinópsis: Woody, el juguete favorito de Andy, se siente amenazado por la inesperada llegada de Buzz Lightyear, el guardián del espacio.</p>
-            <p>Género: <a href="detail-genres.html">Infantil</a></p>
-            </article>
-    
-            <article class="Oppenheimer">
-            <h3>Oppenheimer</h3>
-            <img src="./imagenes/oppenheimer.png" width="150" height="300">
-            <p>Calificación: 4.6/5</p>
-            <p>Fecha de estreno: 20 de julio del 2023</p>
-            <p>Duración: 3 horas</p>
-            <p>Sinópsis: Durante la Segunda Guerra Mundial, el teniente general Leslie Groves designa al físico J. Robert Oppenheimer para un grupo de trabajo que está desarrollando el Proyecto Manhattan, cuyo objetivo consiste en fabricar la primera bomba atómica.</p>
-            <p>Género: <a href="detail-genres.html">Acción</a></p>
-        </article>
-    
-        <article class="Barbie">
-            <h3>Barbie</h3>
-            <img src="./imagenes/barbie.png" width="150" height="300">
-            <p>Calificación: 4.6/5</p>
-            <p>Fecha de estreno: 20 de julio del 2023</p>
-            <p>Duración: 1 hora 54 minutos</p>
-            <p>Sinópsis: Después de ser expulsada de Barbieland por no ser una muñeca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad.</p>
-            <p>Género: <a href="detail-genres.html">Drama</a></p>
-            
-        </article>
-        <article class="Los-Simpson">
-        <h3>Los simpsons</h3>
-    <img src="./imagenes/simpson.png" width="150" height="300">
-    <p>Calificación: 4.5/5</p>
-    <p>Fecha de estreno: 17 de diciembre de 1989</p>
-    <p>Cantidad de temporadas: 35</p>
-    <p>Sinópsis:La comedia de dibujos animados se centra en una familia que vive en la ciudad de Springfield. La cabeza de la familia Simpson es Homero, quien no es un hombre de familia típico, obrero de una planta nuclear, él hace lo mejor para poder liderar a su familia, pero frecuentemente se da cuenta que son ellos los que lo mandan. La familia se compone de la matriarca amorosa, Marge, de cabello azul, el hijo agitador Bart, la hija aplicada Lisa y la bebé Maggie.</p>
-    <p>Género: <a href="detail-genres.html">Comedia</a></p>
-</article>
-
-<article class="Suits">
-    <h3>Suits</h3>
-    <img src="./imagenes/suits.png" width="150" height="300">
-    <p>Calificación: 3.9/5</p>
-    <p>Fecha de estreno: 23 de junio del 2011</p>
-    <p>Cantidad de temporadas: 9</p>
-    <p>Sinópsis:El gran abogado corporativo de Manhattan, Harvey Specter y su equipo, Donna Paulsen, Louis Litt y Alex Williams, se lanzan a un juego por obtener el poder cuando un nuevo socio se une a la empresa. Con sus dos mejores colegas fuera y Jessica de regreso en Chicago, Specter y el equipo intentan adaptarse a una nueva situación sin ellos. El grupo enfrenta traiciones, relaciones fieras y secretos que finalmente salen a la luz. Viejas y nuevas rivalidades aparecen entre los miembros del equipo a medida que aprenden a lidiar con el recién llegado.</p>
-    <p>Género: <a href="detail-genres.html">Drama</a></p>
-</article>
-    </section>
-    </body>
-    <footer class="footer">
-        <p> Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
-    </footer>
+    <h2>PELICULAS FAVORITAS</h2>
+    <main>
+        <section class="contenedor">
+            <div class="item1">
+                <ul>
+                    <li>
+                        <img class="imagenes" src="./imgs/barbie.png" alt="">
+                        <h3>BARBIE</h3>
+                        <h4>23 de julio del 2023</h4>
+                    </li>
+                    <li>
+                        <img class="imagenes" src="./imgs/oppenheimer.png" alt="">
+                        <h3>OPPENHEIMER</h3>
+                        <h4>23 de julio del 2023</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <h2>SERIES FAVORITAS</h2>
+    <main>
+        <section class="contenedor">
+            <div class="item1">
+                <ul>
+                    <li>
+                        <img class="imagenes" src="./imgs/simpson.png" alt="">
+                        <h3>SIMPSON</h3>
+                        <h4>17 de diciembre de 1989</h4>
+                    </li>
+                    <li>
+                        <img class="imagenes" src="./imgs/gossip girl.png" alt="">
+                        <h3>GOSSIP GIRL</h3>
+                        <h4>19 de septiembre del 2007</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+<footer class="footer">
+<p>Maxima Pardo, Timoteo Clutterbuck y Paz Nobile</p>
+</footer>
 </body>
 </html>
