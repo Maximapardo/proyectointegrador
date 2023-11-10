@@ -30,17 +30,17 @@ function search(){
 
       fetch(url)
         .then (function (response){
-          return response.jason()
+          return response.json()
         })
         .then(function(data){
           let info = data.results
           console.log(info);
-          let contenedorpelis = document.querySelector('.series');
+          let contenedorseries = document.querySelector('.series');
           for (let i = 0; i < info.length; i++) {
-            movieContainer.innerHTML += `<div class="series">
+            contenedorseries.innerHTML += `<div class="series">
             <a href="./detail-series.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="series"></a>
             <h3 class="titulos-series">${info[i].title}</h3>
-            <4 class="fechas">${info[i].release_date}</h4>
+            <h4 class="fechas">${info[i].release_date}</h4>
           </div>`
           }
         })
@@ -48,3 +48,46 @@ function search(){
     .catch(function (error){
       console.log(error);
     })
+
+    const url2 = 'https://api.themoviedb.org/3/movie/popular?api_key=3c3df15ca351ec3735ad14140026cfb8&language=en-US'
+
+    fetch(url2)
+        .then (function(response){
+            return response.json()
+        })
+        .then(function(data){
+            let info = data.results
+            console.log(info);
+            let contenedorpelis = document.querySelector('.pelis');
+            for (let i = 0; i < info.length; i++) {
+              contenedorpelis.innerHTML += `<div class="pelis">
+              <a href="./detail-pelis.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="series"></a>
+              <h3 class="titulos-pelis">${info[i].title}</h3>
+              <h4 class="fechas">${info[i].release_date}</h4>
+            </div>`
+            }
+          })
+          .catch(function (error){
+            console.log(error);
+          })
+      
+    const url3 = 'https://api.themoviedb.org/3/movie/top_rated?api_key=3c3df15ca351ec3735ad14140026cfb8&language=en-US'
+    fetch (url3)
+    .then (function(response){
+        return response.json()
+    })
+    .then(function(data){
+        let info = data.results
+        console.log(info);
+        let contenedorpelis = document.querySelector('.pelis');
+        for (let i = 0; i < info.length; i++) {
+          contenedorpelis.innerHTML += `<div class="pelis">
+          <a href="./detail-pelis.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="series"></a>
+          <h3 class="titulos-pelis">${info[i].title}</h3>
+          <h4 class="fechas">${info[i].release_date}</h4>
+        </div>`
+        }
+      })
+      .catch(function (error){
+        console.log(error);
+      })
