@@ -19,7 +19,7 @@ window.addEventListener ('load', function (){
 
     for (let i = 0; i< arrayGeneros.length; i++){
         DetalleGen += `<div class="pelicula">
-        <a href="./detail-serie.html?id=${arrayGeneros[i].id}"><img src="https://image.tmdb.org/t/p/w500/${arrayGeneros[i].poster_path}" alt="series"></a>
+        <a href="./detail-movie.html?id=${arrayGeneros[i].genre_ids}"><img src="https://image.tmdb.org/t/p/w500/${arrayGeneros[i].poster_path}" alt="pelis"></a>
         <h4 class="titulos-peliculas">${arrayGeneros[i].title}</h4>
         <p class="fechas">${arrayGeneros[i].release_date}</p>
     </div>`
@@ -36,15 +36,15 @@ window.addEventListener ('load', function (){
     
     fetch (url2)
     .then  (function (response){
-        return respone.json ();
+        return response.json ();
     })
     .then (function (data){
         let results = data.results
         console.log(results);
         let GeneroEspecifico = ''
     
-    for (let i=0; i<results.length; i++){
-        GeneroEspecficio += `<div class="pelicula">
+    for (let i = 0; i < results.length; i++){
+        GeneroEspecifico += `<div class="series">
         <a href="./detail-serie.html?id=${results[i].id}"><img src="https://image.tmdb.org/t/p/w500/${results[i].poster_path}" alt="series"></a>
         <h4 class="titulos-series">${results[i].original_name}</h4>
         <p class="fechas">${results[i].first_air_date}</p>
