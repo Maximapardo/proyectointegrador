@@ -19,8 +19,8 @@ window.addEventListener('load', function(){
       .catch(function (error) {
         console.log("Error: " + error);
       })
+    //series//
       let ruta = "https://api.themoviedb.org/3/genre/tv/list?api_key=45d43a6901861343cdb188d4f3bafd7c&language=en-US"
-//series//
       fetch(ruta)
         .then(function (response) {
           return response.json()
