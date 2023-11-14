@@ -15,9 +15,9 @@ window.addEventListener ('load', function (){
 
         document.querySelector('.title').innerHTML = peliculaDetalle.title;
         document.querySelector('.overview').innerHTML = peliculaDetalle.overview;
-        document.querySelector('image').src = `https://image.tmdb.org/t/p/w500/${peliculaDetalle.poster_path}`;
-        document.querySelector('releasedate').innerHTML = peliculaDetalle.release.date;
-        document.querySelector('runtime').innerHTML = peliculaDetalle.runtime;
+        document.querySelector('image').src = `https://image.tmdb.org/t/p/original${peliculaDetalle.poster_path}`;
+        document.querySelector('relasedate').innerHTML = peliculaDetalle.release.date;
+        document.querySelector('runtime').innerHTML = `${peliculaDetalle.runtime} Minutos`;
         document.querySelector('rating').innerHTML = peliculaDetalle.vote_average;
 
         for (var i = 0; i < peliculaDetalle.genres.length; i++) {

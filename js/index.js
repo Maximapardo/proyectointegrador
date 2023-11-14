@@ -45,11 +45,11 @@ return res.json()
     let peliculasPopularesContainer = document.querySelector("#peliculasPopulares")
     for (let i = 0; i < info.length; i++) {
         peliculasPopularesContainer.innerHTML += `<div class="pelis">
-                    <a href="./detail-movie.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
-                    <h3 class="titulos-pelis">${info[i].title}</h3>
-                    <h4 class="fechas">${info[i].release_date}</h4>
-                  </div>`
-                  }
+          <a href="./detail-movie.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
+          <h3 class="titulos-pelis">${info[i].title}</h3>
+          <h4 class="fechas">${info[i].release_date}</h4>
+          </div>`
+          }
 })
 .catch(function(err){
     console.log(err)
