@@ -12,7 +12,7 @@ window.addEventListener('load', function(){
         let lista = document.querySelector(".generos")
         for (let i = 0; i < generos.length; i++) {
           lista.innerHTML += `<article class="borde">
-          <a href="./detail-genres.html?id=${generos[i].id}" class="genero-boton">${generos[i].name}</a>
+          <a href="./detail-genres.html?id=${generos[i].name}" class="genero-boton">${generos[i].name}</a>
           </article>`
         }
       })
