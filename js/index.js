@@ -45,7 +45,7 @@ return res.json()
     let peliculasPopularesContainer = document.querySelector("#peliculasPopulares")
     for (let i = 0; i < info.length; i++) {
         peliculasPopularesContainer.innerHTML += `<div class="pelis">
-          <a href="./search-results.html?resultadosbusqueda=${info[i].title}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
+          <a href="./detail-movie.html?resultadosbusqueda=${info[i].title}"><img src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
           <h3 class="titulos-pelis">${info[i].title}</h3>
           <h4 class="fechas">${info[i].release_date}</h4>
           </div>`

@@ -1,33 +1,34 @@
-window.addEventListener ('load', function (){
-
+window.addEventListener('load', function () {
     let detalle = location.search;
     let detalleObjeto = new URLSearchParams(detalle);
-    let movie_id = detalleObjeto.get ('id');
+    let movie_id = detalleObjeto.get('id');
 
-    let url = (`https://api.themoviedb.org/3/movie/${movie_id}?api_key=3c3df15ca351ec3735ad14140026cfb8&language=en-US`)
+    let url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=3c3df15ca351ec3735ad14140026cfb8&language=en-US`;
 
-    fetch (url)
-    .then (function (response){
-        return response.json();
-    })
-    .then(function (peliculaDetalle){
-        console.log(peliculaDetalle);
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (peliculaDetalle) {
+            console.log(peliculaDetalle);
 
-        document.querySelector('.title').innerHTML = peliculaDetalle.title;
-        document.querySelector('.overview').innerHTML = peliculaDetalle.overview;
-        document.querySelector('image').src = `https://image.tmdb.org/t/p/original${peliculaDetalle.poster_path}`;
-        document.querySelector('relasedate').innerHTML = peliculaDetalle.release.date;
-        document.querySelector('runtime').innerHTML = `${peliculaDetalle.runtime} Minutos`;
-        document.querySelector('rating').innerHTML = peliculaDetalle.vote_average;
+            document.querySelector('.title').innerHTML = peliculaDetalle.title;
+            document.querySelector('.overview').innerHTML = peliculaDetalle.overview;
+            document.querySelector('.image').src = `https://image.tmdb.org/t/p/w500/${peliculaDetalle.poster_path}`;
+            document.querySelector('.releasedate').innerHTML = peliculaDetalle.release_date;
+            document.querySelector('.runtime').innerHTML = peliculaDetalle.runtime;
+            document.querySelector('.rating').innerHTML = peliculaDetalle.vote_average;
 
-        for (var i = 0; i < peliculaDetalle.genres.length; i++) {
-            let genero = document.querySelector(".genero");
-            genero.innerHTML += `<a href="detail-genres.html?id=${peliculaDetalle.genres[i].id}"> ${peliculaDetalle.genres[i].name}</a>`
-        }
-    })
-    .catch (function (error){
-        console.log(error);
-    })
+            for (var i = 0; i < peliculaDetalle.genres.length; i++) {
+                let genero = document.querySelector(".genero");
+                genero.innerHTML += `<a href="detail-genres.html?id=${peliculaDetalle.genres[i].id}"> ${peliculaDetalle.genres[i].name}</a>`
+            }
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+});
+
 
     //recomendaciones//
 
@@ -68,4 +69,3 @@ window.addEventListener ('load', function (){
 
 
 
-})
