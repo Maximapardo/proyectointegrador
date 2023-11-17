@@ -6,7 +6,7 @@
     <title>Resultados de Busqueda</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body>
+<body onload="search()">
     <header class="header">
         <h1>PMT STREAMING</h1>
         <div>
@@ -34,10 +34,17 @@
                 <div class="info-peli">
                     <ul>
                         <h3 id="titlemovie"></h3>
-                        <h4 id="titledate">Fecha de estreno: 29 de junio del 2006</h4>
-                        <h4 id="sinopsis">Sinópsis:De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo largo de la histórica Ruta 66.</h4>
-                        <h4 id="generos"> <a class="generos" href="./detail-genres.html"> Genero: Infantil</a></h4>
-                        <h4 id="calificacion">Calificación: 9</h4>
+                        <h4 id="titledate"> </h4>
+                        <h4 id="sinopsis"> </h4>
+                        <h4 id="generos"> </h4>
+                        <input
+                        id="calificacion"
+                        class="rating"
+                        max="10"
+                        oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                        step="0.5"
+                        type="range"
+                        >
                     </ul>
                     <section>
                         <form action="./favorite.html" method="GET">
