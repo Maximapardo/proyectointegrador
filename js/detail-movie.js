@@ -49,7 +49,7 @@ fetch(url, options)
     let recomendacionesPeliculas = document.querySelector("#divrecommendations")
 
 
-    for (let i = 0; i < json.results.length; i++) {
+    for (let i = 0; i < 1; i++) {
         recomendacionesPeliculas.innerHTML += `<div class="reco-pelis">
         <img class="imgreco" src='https://image.tmdb.org/t/p/w500/${json.results[i].poster_path}'>
         <h4 class="fechas-reco">${json.results[i].title}</h4>

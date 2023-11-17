@@ -58,19 +58,24 @@
     border-radius: 5px; 
 }
 
-footer{
-    background-color: #333;
-    text-align: left;
+.footer {
+    background-color: #303030; 
+    padding:20px;
+    text-align: center; 
+}
+
+.footer p {
+    margin: 0; 
+    font-size: 14px; 
     color: white;
 }
-footer img{
+
+.footer img {
     width: 300px;
-    height: 100px;
-    background-color: #333;
-    padding: 15px;
-    float: left;
-    margin-right: auto;
+    height: 100px; 
+    margin-top: 10px; 
 }
+
 
 body {
     background-color:#333;
@@ -141,6 +146,25 @@ main {
   }
   
   .muestra a {
+    text-decoration: none;
+  }
+  .reco-pelis {
+    display: inline-block; 
+    margin: 10px; 
+    text-align: center; 
+  }
+ 
+  .imgreco {
+    max-width: 100%; 
+    height: auto; 
+    width: 300px;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 15px;
+    border-radius: 5px;
+  }
+  
+  .reco-pelis a {
     text-decoration: none;
     color: inherit;
   }
