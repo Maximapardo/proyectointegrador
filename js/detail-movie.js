@@ -45,7 +45,6 @@ fetch(url, options)
   .then(res => res.json())
   .then(json => {
     console.log(json);
-    console.log("aca!")
     console.log(json.results);
     let recomendacionesPeliculas = document.querySelector("#divrecommendations")
 

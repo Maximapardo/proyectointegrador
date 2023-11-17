@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
           data.results.forEach(series => {
             detalleSeries += `<div class="series">
-              <a href="./detail-serie?resultadosbusqueda=${series.name}">
+              <a href="./detail-serie.html?resultadosbusqueda=${series.name}">
                 <img src="https://image.tmdb.org/t/p/w500/${series.poster_path}" alt="series">
               </a>
               <h4 class="titulos-series">${series.name}</h4>
