@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados de Busqueda</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="./js/script.js"></script>
+    <script src="./js/search-results.js"></script>
 </head>
 <body onload="search()">
     <header class="header">
@@ -38,14 +38,7 @@
                         <h4 id="titledate"> </h4>
                         <h4 id="sinopsis"> </h4>
                         <h4 id="generos"> </h4>
-                        <input
-                        id="calificacion"
-                        class="rating"
-                        max="10"
-                        oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
-                        step="0.5"
-                        type="range"
-                        >
+                        <h4 id="calificacion"></h4>
                     </ul>
                     <section>
                         <form action="./favorite.html" method="GET">
