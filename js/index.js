@@ -70,7 +70,7 @@ const home = ()=> {
 
           for (let i = 0; i < info.length; i++) {
               peliculasValoradasContainer.innerHTML += `<div class="muestra">
-                  <a href="./detail-movie.html?id=${info[i].id}"><img img class="imgpopulares"src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
+                  <a href="./detail-movie.html?resultadosbusqueda=${info[i].id}"><img img class="imgpopulares"src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="pelis"></a>
                   <h3 class="titulos-pelis">${info[i].title}</h3>
                   <h4 class="fechas">${info[i].release_date}</h4>
               </div>`;
@@ -91,7 +91,7 @@ const home = ()=> {
       let seriesPopularesContainer = document.querySelector("#seriesPopulares");  // Cambiado para usar un contenedor de series populares
       for (let i = 0; i < info.length; i++) {
         seriesPopularesContainer.innerHTML += `<div class="muestra">
-                <a href="./detail-serie.html?id=${info[i].id}">
+                <a href="./detail-serie.html?resultadosbusqueda=${info[i].id}">
                 <img class="imgpopulares" src="https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="series"></a>
                 <h3 class="titulos-pelis">${info[i].name}</h3>
                 <h4 class="fechas">${info[i].first_air_date}</h4>
