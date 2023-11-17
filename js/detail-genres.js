@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
           let detalleGen = '';
   
           data.results.forEach(movie => {
-            detalleGen += `<div class="pelicula">
+            detalleGen += `<div class="muestra">
               <a href="./detail-movie.html?resultadosbusqueda=${movie.title}">
-                <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="pelis">
+                <img class="imgpopulares" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="pelis">
               </a>
-              <h4 class="titulos-peliculas">${movie.title}</h4>
-              <p class="fechas">${movie.release_date}</p>
+              <h3 class="titulos-pelis">${movie.title}</h3>
+              <h4 class="fechas">${movie.release_date}</h4>
             </div>`;
           });
   
@@ -52,12 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
           let detalleSeries = '';
   
           data.results.forEach(series => {
-            detalleSeries += `<div class="series">
+            detalleSeries += `<div class="muestra">
               <a href="./detail-serie.html?resultadosbusqueda=${series.name}">
-                <img src="https://image.tmdb.org/t/p/w500/${series.poster_path}" alt="series">
+                <img class="imgpopulares" src="https://image.tmdb.org/t/p/w500/${series.poster_path}" alt="pelis">
               </a>
-              <h4 class="titulos-series">${series.name}</h4>
-              <p class="fechas">${series.first_air_date}</p>
+              <h3 class="titulos-series">${series.name}</h3>
+              <h4 class="fechas">${series.first_air_date}</h4>
             </div>`;
           });
   
