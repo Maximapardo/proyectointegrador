@@ -15,7 +15,7 @@ fetch(url, options)
     document.getElementById("titledate").innerHTML=json.results[0].release_date;
     document.getElementById("sinopsis").innerHTML=json.results[0].overview;
     document.getElementById("generos").innerHTML=''; //json.results[0].title;
-    document.getElementById("calificacion").innerHTML=json.results[0].vote_average;
+    document.getElementById("calificacion").style ="--value:"+json.results[0].vote_average/2;
     document.getElementById("image_movie").src='https://image.tmdb.org/t/p/w500/'+json.results[0].backdrop_path;
 })
 .catch(err => console.error('error:' + err));
