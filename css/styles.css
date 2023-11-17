@@ -60,7 +60,7 @@
 
 footer{
     background-color: #333;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
@@ -194,6 +194,14 @@ main {
     color: #333;
     cursor: pointer;
     border-radius: 5px;
+}
+footer img{
+    width: 300px;
+    height: 100px;
+    background-color: #333;
+    padding: 15px;
+    float: left;
+    margin-right: auto;
 }
 
 @media (max-width: 400px){
