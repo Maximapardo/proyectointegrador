@@ -50,9 +50,9 @@ fetch(url, options)
 
 
     for (let i = 0; i < json.results.length; i++) {
-        recomendacionesPeliculas.innerHTML += `<div class="pelis">
-        <img src='https://image.tmdb.org/t/p/w500/${json.results[i].poster_path}' size="50%">
-        <h4 class="fechas">${json.results[i].title}</h4>
+        recomendacionesPeliculas.innerHTML += `<div class="reco-pelis">
+        <img class="imgreco" src='https://image.tmdb.org/t/p/w500/${json.results[i].poster_path}'>
+        <h4 class="fechas-reco">${json.results[i].title}</h4>
         </div>`
         }
 

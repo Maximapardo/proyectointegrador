@@ -231,21 +231,14 @@ main {
     padding-bottom: 2%;
 } 
 .boton-favoritos{
-    background-color: white;
+    background-color: rgba(247, 246, 249, 0.542);
     margin-top: 0%;   
     margin-left: 4%;
-    color: #333;
+    color: #11092eee;
     cursor: pointer;
     border-radius: 5px;
 }
-.boton-reco{
-    background-color: white;
-    margin-top: 0%;   
-    margin-left: 4%;
-    color: #333;
-    cursor: pointer;
-    border-radius: 5px;
-}
+
 
 
 @media (max-width: 400px){
