@@ -27,7 +27,7 @@ window.addEventListener ('load', function (){
 
     for (let i = 0; i< arrayGeneros.length; i++){
         DetalleGen += `<div class="pelicula">
-        <a href="./search-results.html?resultadosbusqueda=${arrayGeneros[i].title}"><img src="https://image.tmdb.org/t/p/w500/${arrayGeneros[i].poster_path}" alt="pelis"></a>
+        <a href="./detail-movie.html?resultadosbusqueda=${arrayGeneros[i].title}"><img src="https://image.tmdb.org/t/p/w500/${arrayGeneros[i].poster_path}" alt="pelis"></a>
         <h4 class="titulos-peliculas">${arrayGeneros[i].title}</h4>
         <p class="fechas">${arrayGeneros[i].release_date}</p>
     </div>`
