@@ -11,12 +11,12 @@ fetch(url, options)
 .then(res => res.json())
 .then(json =>{
     console.log(json);
-    document.getElementById("titleserie").innerHTML=json.results[0].name;
-    document.getElementById("titleair").innerHTML=json.results[0].first_air_date;
-    document.getElementById("resumen").innerHTML=json.results[0].overview;
-    document.getElementById("genero").innerHTML=''; //json.results[0].title;
-    document.getElementById("vote").innerHTML=json.results[0].vote_average;
-    document.getElementById("image_serie").src='https://image.tmdb.org/t/p/w500/'+json.results[0].backdrop_path;
+    document.getElementById("titleseries").innerHTML=json.results[0].name;
+    document.getElementById("dateseries").innerHTML=json.results[0].first_air_date;
+    document.getElementById("sinopsisseries").innerHTML=json.results[0].overview;
+    document.getElementById("generosseries").innerHTML=''; //json.results[0].title;
+    document.getElementById("calificacionseries").innerHTML=json.results[0].vote_average;
+    document.getElementById("image_series").src='https://image.tmdb.org/t/p/w500/'+json.results[0].backdrop_path;
 })
 .catch(err => console.error('error:' + err));
 
