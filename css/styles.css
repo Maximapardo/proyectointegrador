@@ -63,6 +63,14 @@ footer{
     text-align: left;
     color: white;
 }
+footer img{
+    width: 300px;
+    height: 100px;
+    background-color: #333;
+    padding: 15px;
+    float: left;
+    margin-right: auto;
+}
 
 body {
     background-color:#333;
@@ -195,14 +203,7 @@ main {
     cursor: pointer;
     border-radius: 5px;
 }
-footer img{
-    width: 300px;
-    height: 100px;
-    background-color: #333;
-    padding: 15px;
-    float: left;
-    margin-right: auto;
-}
+
 
 @media (max-width: 400px){
 .form{
@@ -271,7 +272,10 @@ h3{
 .pelis{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    text-align: left;
+    flex-direction: row;
+    padding-top: 10px;
 }
 .series {
     display: flex;
