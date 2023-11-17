@@ -33,3 +33,5 @@ console.log(queryStringObj.get("resultadosbusqueda"))
 
 
 
+
+
