@@ -1,5 +1,4 @@
-const genre =()=>{
- 
+window.addEventListener('load', function(){
   let url = "https://api.themoviedb.org/3/genre/movie/list?api_key=45d43a6901861343cdb188d4f3bafd7c&language=en-US"
 //pelis//
   fetch(url)
@@ -42,5 +41,4 @@ const genre =()=>{
       .catch(function (error) {
         console.log("Error: " + error);
       })
-
-};
+})

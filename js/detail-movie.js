@@ -1,184 +1,30 @@
-const detailMovie=()=>{
+var url = 'https://api.themoviedb.org/3/search/movie?query='+new URLSearchParams(window.location.search).get("resultadosbusqueda")+'&include_adult=false&language=en-US&page=1';
+var options = {
+method: 'GET',
+headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYzNkZjE1Y2EzNTFlYzM3MzVhZDE0MTQwMDI2Y2ZiOCIsInN1YiI6IjY1NGE1MjQ3NTMyYWNiMDEzODBjOTczNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VmVu6YIU9OpS5RIJ_aIWxqW1O3P-a0xjYVJlzzRCA90'
+}
+};
 
-  
-    const url = 'https://api.themoviedb.org/3/search/movie?query='+new URLSearchParams(window.location.search).get("resultadosbusqueda")+'&include_adult=false&language=en-US&page=1';
-    fetch(url, options)
-      .then(res => res.json())
-      .then(json =>{
-        console.log(json);
-       
-          document.getElementById("titlemovie").innerHTML= json.results[0].title;
-          document.getElementById("titledate").innerHTML=json.results[0].release_date;
-          document.getElementById("sinopsis").innerHTML=json.results[0].overview;
-          document.getElementById("generos").innerHTML=''; //json.results[0].title;
-          document.getElementById("calificacion").innerHTML=json.results[0].vote_average;
-          document.getElementById("image_movie").src='https://image.tmdb.org/t/p/w500/'+json.results[0].backdrop_path;
-          document.getElementById("calificacion").style="--value:"+json.results[0].vote_average/2;
-          
-          
-        
-  
-      })
-      .catch(err => console.error('error:' + err));
-  
-  let queryString = location.search
-  console.log(queryString)
-  
-  let queryStringObj = new URLSearchParams(queryString)
-  console.log(queryStringObj.get("resultadosbusqueda"))
-  
-  
-  
-   };
-  
-  
-   const enumMovieGener=[
-    {
-      "id": 28,
-      "name": "Action"
-    },
-    {
-      "id": 12,
-      "name": "Adventure"
-    },
-    {
-      "id": 16,
-      "name": "Animation"
-    },
-    {
-      "id": 35,
-      "name": "Comedy"
-    },
-    {
-      "id": 80,
-      "name": "Crime"
-    },
-    {
-      "id": 99,
-      "name": "Documentary"
-    },
-    {
-      "id": 18,
-      "name": "Drama"
-    },
-    {
-      "id": 10751,
-      "name": "Family"
-    },
-    {
-      "id": 14,
-      "name": "Fantasy"
-    },
-    {
-      "id": 36,
-      "name": "History"
-    },
-    {
-      "id": 27,
-      "name": "Horror"
-    },
-    {
-      "id": 10402,
-      "name": "Music"
-    },
-    {
-      "id": 9648,
-      "name": "Mystery"
-    },
-    {
-      "id": 10749,
-      "name": "Romance"
-    },
-    {
-      "id": 878,
-      "name": "Science Fiction"
-    },
-    {
-      "id": 10770,
-      "name": "TV Movie"
-    },
-    {
-      "id": 53,
-      "name": "Thriller"
-    },
-    {
-      "id": 10752,
-      "name": "War"
-    },
-    {
-      "id": 37,
-      "name": "Western"
-    }
-  ];
-  
-  const enumGenreTv=[
-    {
-      "id": 10759,
-      "name": "Action & Adventure"
-    },
-    {
-      "id": 16,
-      "name": "Animation"
-    },
-    {
-      "id": 35,
-      "name": "Comedy"
-    },
-    {
-      "id": 80,
-      "name": "Crime"
-    },
-    {
-      "id": 99,
-      "name": "Documentary"
-    },
-    {
-      "id": 18,
-      "name": "Drama"
-    },
-    {
-      "id": 10751,
-      "name": "Family"
-    },
-    {
-      "id": 10762,
-      "name": "Kids"
-    },
-    {
-      "id": 9648,
-      "name": "Mystery"
-    },
-    {
-      "id": 10763,
-      "name": "News"
-    },
-    {
-      "id": 10764,
-      "name": "Reality"
-    },
-    {
-      "id": 10765,
-      "name": "Sci-Fi & Fantasy"
-    },
-    {
-      "id": 10766,
-      "name": "Soap"
-    },
-    {
-      "id": 10767,
-      "name": "Talk"
-    },
-    {
-      "id": 10768,
-      "name": "War & Politics"
-    },
-    {
-      "id": 37,
-      "name": "Western"
-    }
-  ];
+fetch(url, options)
+.then(res => res.json())
+.then(json =>{
+    console.log(json);
+    document.getElementById("titlemovie").innerHTML=json.results[0].title;
+    document.getElementById("titledate").innerHTML=json.results[0].release_date;
+    document.getElementById("sinopsis").innerHTML=json.results[0].overview;
+    document.getElementById("generos").innerHTML=''; //json.results[0].title;
+    document.getElementById("calificacion").innerHTML=json.results[0].vote_average;
+    document.getElementById("image_movie").src='https://image.tmdb.org/t/p/w500/'+json.results[0].backdrop_path;
+})
+.catch(err => console.error('error:' + err));
 
+let queryString = location.search
+console.log(queryString)
 
+let queryStringObj = new URLSearchParams(queryString)
+console.log(queryStringObj.get("resultadosbusqueda"))
 
 
 
