@@ -44,7 +44,7 @@ function recommendations(){
       .then(json => {
         console.log(json);
         console.log(json.results);
-        let recomendacionesSeries = document.querySelector("#divrecommendations")
+        let recomendacionesSeries = document.querySelector("#divrecommendationstv")
     
     
         for (let i = 0; i < 1; i++) {
