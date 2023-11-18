@@ -20,12 +20,12 @@ function search() {
   const url = `${baseURL}search/movie?query=${encodedSearchTerm}&include_adult=false&language=en-US&page=1`;
 
   fetch(url, options)
-    .then(res => {
-      if (!res.ok) {
-        throw new Error(`Error: ${res.status} - ${res.statusText}`);
-      }
-      return res.json();
-    })
+  .then(res => {
+    if (!res.ok) {
+      return { error: `Error: ${res.status} - ${res.statusText}` };
+    }
+    return res.json();
+  })
     .then(json => {
       console.log("Respuesta de la API:", json);
 
